@@ -1,5 +1,5 @@
 * monthly budget
-This is a terminal based monthly budgeting program for my personal use. I'm an Emacs user so the keyboard and shell are a more efficient tools  for me than software like Excel.
+This is a terminal based monthly budgeting program for my personal use. I'm an Emacs user so the keyboard and shell are more efficient tools  for me than software like Excel.
 
 ** Demo
 #+BEGIN_SRC shell
