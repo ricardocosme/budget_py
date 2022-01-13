@@ -1,0 +1,64 @@
+* monthly budget
+This is a terminal based monthly budgeting program for my personal use. I'm an Emacs user so the keyboard and shell are a more efficient tools  for me than software like Excel.
+
+** Demo
+#+BEGIN_SRC shell
+$./budget.py 12/21 view
+income $11,200.00 
+------------------
+salary $10,000.00 
+rent    $1,200.00 
+
+category          budget   account      diff 
+---------------------------------------------
+[essential]    $3,400.00   $975.89 $2,424.11 
+groceries      $1,500.00     $0.00 $1,500.00 
+energy           $150.00   $125.89    $24.11 
+phone            $100.00   $100.00     $0.00 
+health           $500.00     $0.00   $500.00 
+internet         $100.00     $0.00   $100.00 
+gardener         $750.00   $750.00     $0.00 
+fuel             $300.00     $0.00   $300.00 
+                                             
+[want]         $1,300.90     $0.00 $1,300.90 
+tv                $15.90     $0.00    $15.90 
+spotify           $35.00     $0.00    $35.00 
+entertainment  $1,000.00     $0.00 $1,000.00 
+gifts            $250.00     $0.00   $250.00 
+                                             
+[investings]   $5,800.00 $2,000.00 $3,800.00 
+retirement     $2,000.00 $2,000.00     $0.00 
+bonds          $1,000.00     $0.00 $1,000.00 
+stocks         $2,800.00     $0.00 $2,800.00 
+                                             
+total         $10,500.90 $2,975.89 $7,525.01 
+
+balance           
+------------------
+budget    $699.10 
+account $8,224.11 
+
+budget     %/income 
+--------------------
+essential    30.36% 
+want         11.62% 
+investings   51.79% 
+#+END_SRC
+
+*** Basic commands
+**** New spreadsheet for December 2021
+#+BEGIN_SRC shell
+  ./budget.py 12/21 month new 
+#+END_SRC
+**** Register an income source of income
+#+BEGIN_SRC shell
+  ./budget.py 12/21 income new salary 10000
+#+END_SRC
+**** Register a category
+#+BEGIN_SRC shell
+  ./budget.py 12/21 category new groceries essential 1500
+#+END_SRC
+**** Register an expense
+#+BEGIN_SRC shell
+  ./budget.py 12/21 expense new energy 125.89
+#+END_SRC
