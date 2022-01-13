@@ -66,3 +66,10 @@ investings   51.79%
 ** Dependencies
 1. [[https://sqlite.org/][sqlite3]]
 2. [[https://github.com/ricardocosme/budget_db][SQL schema]]
+
+** Deploy
+#+BEGIN_SRC shell
+  sqlite3 budget.sqlite3 < schema.sql
+  ./budget.py -h
+#+END_SRC
+ 
