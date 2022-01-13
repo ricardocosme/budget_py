@@ -50,7 +50,7 @@ investings   51.79%
 #+BEGIN_SRC shell
   ./budget.py 12/21 month new 
 #+END_SRC
-**** Register an income source of income
+**** Register a source of income
 #+BEGIN_SRC shell
   ./budget.py 12/21 income new salary 10000
 #+END_SRC
